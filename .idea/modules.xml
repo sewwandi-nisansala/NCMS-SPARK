@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CovidManagementSystem.iml" filepath="$PROJECT_DIR$/CovidManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NCMS-SPARK.iml" filepath="$PROJECT_DIR$/NCMS-SPARK.iml" />
+    </modules>
+  </component>
+</project>

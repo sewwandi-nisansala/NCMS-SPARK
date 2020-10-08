@@ -1,0 +1,47 @@
+
+e
+java:S2095C"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(á¥Êá
+e
+java:S2095@"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©ËÅÏ
+k
+java:S2095†"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ã´ßúÿÿÿÿ
+f
+java:S2095¬"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(åèÂâ
+c
+java:S2095<"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+d
+java:S2095¤"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+k
+java:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(´µÔÏûÿÿÿÿ
+d
+java:S2095…"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+j
+java:S2095N"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ó˜¨Òøÿÿÿÿ
+q
+java:S1192f"[Define a constant instead of duplicating this literal "Database connection failed" 3 times.(¦úó°
+c
+java:S1192i"MDefine a constant instead of duplicating this literal "server error" 3 times.(‚¤¡á
+h
+java:S11920"MDefine a constant instead of duplicating this literal "invalid data" 4 times.(”Õ„ˆıÿÿÿÿ
+d
+java:S1192'"IDefine a constant instead of duplicating this literal "password" 3 times.(·…«ğÿÿÿÿÿ
+b
+java:S1192$"LDefine a constant instead of duplicating this literal "hospital_id" 4 times.(àÿÈ
+A
+java:S16599"&Declare "doctorId" on a separate line.(ÀÊÒàıÿÿÿÿ
+k
+java:S19890"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+o
+java:S19897"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(Ÿ±µ
+f
+java:S1989i"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á
+k
+java:S1989v"PHandle the following exception that could be thrown by "getWriter": IOException.(í¿şèùÿÿÿÿ
+l
+java:S1989€"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+g
+java:S1989’"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á
+l
+java:S1989Ÿ"PHandle the following exception that could be thrown by "getWriter": IOException.(í¿şèùÿÿÿÿ
+g
+java:S1989¾"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á

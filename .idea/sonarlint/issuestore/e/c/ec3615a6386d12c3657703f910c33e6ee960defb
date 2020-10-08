@@ -1,0 +1,79 @@
+
+c
+java:S2095j"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+e
+java:S2095o"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(£»Ö
+k
+java:S2095–"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÂØŞùÿÿÿÿ
+d
+java:S2095×"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+d
+java:S2095Š"HUse try-with-resources or close this "Connection" in a "finally" clause.(åç½…ûÿÿÿÿ
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŒÖÍÇıÿÿÿÿ
+d
+java:S2095{"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•·Æ+
+k
+java:S2095Û"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•óûÿÿÿÿ
+f
+java:S2095’"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(µ³ˆ
+c
+java:S1192N"NDefine a constant instead of duplicating this literal "geolocation_y" 4 times.(ÍÇ®o
+r
+java:S1192‘"[Define a constant instead of duplicating this literal "Database connection failed" 3 times.(¦úó°
+d
+java:S1192”"MDefine a constant instead of duplicating this literal "server error" 3 times.(‚¤¡á
+h
+java:S1192T"MDefine a constant instead of duplicating this literal "invalid data" 5 times.(”Õ„ˆıÿÿÿÿ
+m
+java:S1192'"XDefine a constant instead of duplicating this literal "Hospital id is required" 3 times.(ş«ÿ?
+d
+java:S1192H"IDefine a constant instead of duplicating this literal "district" 4 times.(¶øÒÀşÿÿÿÿ
+i
+java:S1192K"NDefine a constant instead of duplicating this literal "geolocation_x" 4 times.(¼åÓñúÿÿÿÿ
+c
+java:S1192E"HDefine a constant instead of duplicating this literal "user_id" 4 times.(âãõşÿÿÿÿ
+e
+java:S1192*"JDefine a constant instead of duplicating this literal "forbidden" 3 times.(í¿şèùÿÿÿÿ
+f	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌ›
+g	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÌ›
+k
+java:S1989*"PHandle the following exception that could be thrown by "getWriter": IOException.(í¿şèùÿÿÿÿ
+t
+java:S1989."YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(Ò³Œ²şÿÿÿÿ
+f
+java:S19892"PHandle the following exception that could be thrown by "getWriter": IOException.(´ØôÏ
+@
+java:S1659\"*Declare "geolocationY" on a separate line.(²äœ
+k
+java:S1989T"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+t
+java:S1989Y"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ïéëìûÿÿÿÿ
+t
+java:S1989Z"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(éÊ¬—üÿÿÿÿ
+k
+java:S1989e"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+g
+java:S1989”"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á
+A
+java:S1659É"*Declare "geolocationY" on a separate line.(²äœ
+l
+java:S1989©"PHandle the following exception that could be thrown by "getWriter": IOException.(í¿şèùÿÿÿÿ
+l
+java:S1989À"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+p
+java:S1989Å"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ıÈÃ
+u
+java:S1989Æ"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ïéëìûÿÿÿÿ
+u
+java:S1989Ç"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(éÊ¬—üÿÿÿÿ
+l
+java:S1989Ò"PHandle the following exception that could be thrown by "getWriter": IOException.(”Õ„ˆıÿÿÿÿ
+g
+java:S1989ğ"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á
+l
+java:S1989…"PHandle the following exception that could be thrown by "getWriter": IOException.(í¿şèùÿÿÿÿ
+g
+java:S1989¨"PHandle the following exception that could be thrown by "getWriter": IOException.(‚¤¡á
+J
+java:S1481Ù".Remove this unused "resultSet" local variable.(¸ÁÌÂøÿÿÿÿ
