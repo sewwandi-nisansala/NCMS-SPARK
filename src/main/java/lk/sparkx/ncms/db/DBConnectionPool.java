@@ -22,7 +22,7 @@ public class DBConnectionPool
         basicDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");     //this is the driver class for the mysql
         basicDataSource.setUrl("jdbc:mysql://localhost:3306/ncms");         //should be of the form jdbc:mysql://localhost:3306/<db name>
         basicDataSource.setUsername("root");                                //db username
-        basicDataSource.setPassword("1234rewq");                            //db password
+        basicDataSource.setPassword("Sewwandi_119");                            //db password
         basicDataSource.setMinIdle(2);
         basicDataSource.setMaxIdle(5);
         basicDataSource.setMaxTotal(10);

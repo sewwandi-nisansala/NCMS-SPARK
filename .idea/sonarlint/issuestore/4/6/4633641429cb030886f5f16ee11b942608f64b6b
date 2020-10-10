@@ -1,0 +1,13 @@
+
+C	java:S108$")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(±è·Èşÿÿÿÿ
+T
+java:S3400M"9Remove this method and declare a constant for this value.(‰äİ¥ùÿÿÿÿ
+f
+java:S1989D"PHandle the following exception that could be thrown by "getWriter": IOException.(¼½Ù†
+O
+java:S3400W"9Remove this method and declare a constant for this value.(… í±
+b
+java:S3973"GUse indentation to denote the code conditionally executed by this "if".(à¯®Ëùÿÿÿÿ
+O
+java:S3400R"9Remove this method and declare a constant for this value.(©ÂË

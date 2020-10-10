@@ -2,12 +2,11 @@ package lk.sparkx.ncms.controller;
 
 import com.google.gson.JsonObject;
 import lk.sparkx.ncms.ObjectRepo;
+import lk.sparkx.ncms.dao.Doctor;
 import lk.sparkx.ncms.dao.Hospital;
-import lk.sparkx.ncms.dao.Patient;
-import lk.sparkx.ncms.dao.Result;
 import lk.sparkx.ncms.db.DBConnectionPool;
-import lk.sparkx.ncms.service.HospitalServiceImpl;
-import lk.sparkx.ncms.service.HotelService;
+import lk.sparkx.ncms.repository.HospitalRepository;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,17 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
-
-/**
- * Created by: thisum
- * Date      : 2020-08-16
- * Time      : 22:45
- **/
 
 @WebServlet(name = "HospitalServlet")
 public class HospitalServlet extends HttpServlet
@@ -35,62 +25,112 @@ public class HospitalServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        Patient patient = new Patient(req.getParameter("name"), req.getParameter("age"), req.getParameter("x"));
+        String district = req.getParameter("district");
 
-        HotelService hotelService = new HospitalServiceImpl();
-        Result result =  hotelService.getBedInformationForThePaient(patient);
+        Connection connection = null;
+        PreparedStatement statement = null;
+        int result = 0;
 
-        String data = ObjectRepo.getInstance().getData();
-        this.sendResponse(data, resp);
+        try {
+            connection = DBConnectionPool.getInstance().getConnection();
+
+            //PreparedStatement statement;
+            ResultSet resultSet;
+
+            statement = connection.prepareStatement("SELECT * FROM hospital WHERE district=?");
+            statement.setString(1, district);
+            System.out.println(statement);
+            resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                String id = resultSet.getString("id");
+                String name = resultSet.getString("name");
+                int locationX = resultSet.getInt("location_x");
+                int locationY = resultSet.getInt("location_y");
+                Date buildDate = resultSet.getDate("build_date");
+
+                PrintWriter printWriter = resp.getWriter();
+
+                printWriter.println("Id: " + id);
+                printWriter.println("Name: " + name);
+                printWriter.println("District: " + district);
+                printWriter.println("Location_X: " + locationX);
+                printWriter.println("Location_Y: " + locationY);
+                printWriter.println("Build Date: " + buildDate);
+                System.out.println("doGet doctor success");
+
+            }
+            connection.close();
+
+        } catch (Exception exception) {
+
+        }
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        String key = req.getParameter("key");
-        String value = req.getParameter("value");
+        String id = req.getParameter("id");
+        String name = req.getParameter("name");
+        String district = req.getParameter("district");
+        int locationX = Integer.parseInt(req.getParameter("locationX"));
+        int locationY = Integer.parseInt(req.getParameter("locationY"));
+        java.util.Date dateBuild = new java.util.Date();
+        Date buildDate = new Date(dateBuild.getTime());
 
-        ObjectRepo.getInstance().addData(key, value);
-        String data = ObjectRepo.getInstance().getData();
-        this.sendResponse(data, resp);
+        Hospital hospital = new Hospital();
+        hospital.setId(id);
+        hospital.setName(name);
+        hospital.setDistrict(district);
+        hospital.setLocationX(locationX);
+        hospital.setLocationY(locationY);
+        hospital.setBuildDate(buildDate);
+
+        HospitalRepository hospitalRepository = new HospitalRepository();
+        String hospitalRegistered = hospitalRepository.registerHospital(hospital);
+
+        if(hospitalRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
+        {
+            System.out.println("Success");
+        }
+        else   //On Failure, display a meaningful message to the User.
+        {
+            System.out.println("Failed");
+        }
+
+        try {
+            hospitalRepository.registerHospital(hospital);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        String key = req.getParameter("key");
-        String value = req.getParameter("value");
 
-        ObjectRepo.getInstance().updateData(key, value);
-        String data = ObjectRepo.getInstance().getData();
-        this.sendResponse(data, resp);
     }
 
+    //discharge patient by director
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        String key = req.getParameter("key");
+        Connection connection = null;
+        PreparedStatement statement = null;
 
-        ObjectRepo.getInstance().deleteData(key);
-        String data = ObjectRepo.getInstance().getData();
-        this.sendResponse(data, resp);
+        String patientId = req.getParameter("id");
+        String hospitalId = req.getParameter("hospital_id");
+
+//        Doctor doctor = new Doctor();
+//        doctor.dischargePatients(patientId, hospitalId);
+//
+//        Bed bed = new Bed();
+//        bed.makeAvailable(patientId);
+
     }
 
-    /**
-     * Send response using JsonObject. Best to use when the response contains 1-2 parameters
-     *
-     * @param data
-     * @param resp
-     * @throws IOException
-     */
-    private void sendResponse(String data, HttpServletResponse resp) throws IOException
-    {
-        resp.setContentType("application/json");
-        PrintWriter writer = resp.getWriter();
-        JsonObject json = new JsonObject();
-        json.addProperty("Response", data);
-        writer.print(json.toString());
-        writer.flush();
-    }
+
 
 }

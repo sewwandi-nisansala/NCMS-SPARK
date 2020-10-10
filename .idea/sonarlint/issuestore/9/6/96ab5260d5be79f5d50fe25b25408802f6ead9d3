@@ -1,0 +1,25 @@
+
+i
+java:S2095:"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¹™„€üÿÿÿÿ8íëÓ–Ñ.
+E	java:S108P")Either remove or fill this block of code.(®ËúÃ8íëÓ–Ñ.
+Z	java:S106["9Replace this use of System.out or System.err by a logger.(×ãìüÿÿÿÿ8Úší”Ñ.
+q
+java:S2095?"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ô‡Ä¿ıÿÿÿÿ8íëÓ–Ñ.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ŞĞ°8Úší”Ñ.
+Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(íŠÚçüÿÿÿÿ8Úší”Ñ.
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»Åë„ûÿÿÿÿ8Úší”Ñ.
+X	java:S1253"<This block of commented-out lines of code should be removed.(™›şÃ8íëÓ–Ñ.
+X	java:S125C"<This block of commented-out lines of code should be removed.(Ú‹´ğ8íëÓ–Ñ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(µâ£äşÿÿÿÿ8Úší”Ñ.
+U	java:S106_"9Replace this use of System.out or System.err by a logger.(†ÚÂà8Úší”Ñ.
+l
+java:S20959"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ù¡İ8íëÓ–Ñ.
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(ëú¦¦øÿÿÿÿ8íëÓ–Ñ.
+T	java:S106H"9Replace this use of System.out or System.err by a logger.(ùø¼8íëÓ–Ñ.
+Z	java:S106\"9Replace this use of System.out or System.err by a logger.(îöÁÑøÿÿÿÿ8Úší”Ñ.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(Ç±‘¹8íëÓ–Ñ.
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(—æá‚ıÿÿÿÿ8íëÓ–Ñ.
+U	java:S106Y"9Replace this use of System.out or System.err by a logger.(Îã­Ã8Úší”Ñ.
+]	java:S1256"<This block of commented-out lines of code should be removed.(Á×¸Éùÿÿÿÿ8íëÓ–Ñ.
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(ÿê§¯8íëÓ–Ñ.

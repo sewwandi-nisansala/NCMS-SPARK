@@ -1,0 +1,13 @@
+
+R
+java:S1481"5Remove this unused "doctorRepository" local variable.(ŒÚƒæ8™íƒ’Ñ.
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(­Ùúæ8ÎÆÎ•Ñ.
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(þÒãûÿÿÿÿ8½íø”Ñ.
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(—æá‚ýÿÿÿÿ8½íø”Ñ.
+Y
+java:S1854="<Remove this useless assignment to local variable "doctorId".(Ó†¥÷8Ú‡Ì•Ñ.
+J
+java:S1481="-Remove this unused "doctorId" local variable.(Ó†¥÷8Ú‡Ì•Ñ.
+X	java:S1259"<This block of commented-out lines of code should be removed.(Ÿ´ƒ8ÕÁ¿•Ñ.
+a
+java:S1854"DRemove this useless assignment to local variable "doctorRepository".(ŒÚƒæ8™íƒ’Ñ.

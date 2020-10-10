@@ -11,8 +11,29 @@
 
     <servlet>
         <servlet-name>Statistics</servlet-name>
-        <servlet-class>lk.sparkx.ncms.Statistics</servlet-class>
+        <servlet-class>lk.sparkx.ncms.controller.Statistics</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>DoctorServlet</servlet-name>
+        <servlet-class>lk.sparkx.ncms.controller.DoctorServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HospitalServlet</servlet-name>
+        <servlet-class>lk.sparkx.ncms.controller.HospitalServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PatientServlet</servlet-name>
+        <servlet-class>lk.sparkx.ncms.controller.PatientServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>lk.sparkx.ncms.controller.UserServlet</servlet-class>
+    </servlet>
+
 
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
@@ -23,5 +44,26 @@
         <servlet-name>Statistics</servlet-name>
         <url-pattern>/statistics/*</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DoctorServlet</servlet-name>
+        <url-pattern>/doctor</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HospitalServlet</servlet-name>
+        <url-pattern>/hospital</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PatientServlet</servlet-name>
+        <url-pattern>/patient</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

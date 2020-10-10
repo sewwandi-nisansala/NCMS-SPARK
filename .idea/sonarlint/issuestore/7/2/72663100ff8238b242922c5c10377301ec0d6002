@@ -1,0 +1,17 @@
+
+E	java:S108P")Either remove or fill this block of code.(®ËúÃ8¸·™Ñ.
+j
+java:S2259G"HA "NullPointerException" could be thrown; "statement2" is nullable here.(±µñÒûÿÿÿÿ8¸·™Ñ.
+\
+java:S1854G":Remove this useless assignment to local variable "result".(±µñÒûÿÿÿÿ8¸·™Ñ.
+X	java:S125H"<This block of commented-out lines of code should be removed.(ùéËç8¸·™Ñ.
+X
+java:S11179"6Rename "id" which hides the field declared at line 10.(°æêüÿÿÿÿ8¸·™Ñ.
+Q
+java:S1481-"/Remove this unused "statement3" local variable.(¨»ÊÂúÿÿÿÿ8¸·™Ñ.
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(ÿê§¯8¸·™Ñ.
+i
+java:S20956"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8¸·™Ñ.
+U	java:S106D"9Replace this use of System.out or System.err by a logger.(Ç±‘¹8¸·™Ñ.
+M
+java:S1481."+Remove this unused "result" local variable.(Ó°¬Ñøÿÿÿÿ8¸·™Ñ.
