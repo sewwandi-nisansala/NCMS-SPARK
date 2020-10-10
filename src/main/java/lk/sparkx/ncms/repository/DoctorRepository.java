@@ -48,7 +48,7 @@ public class DoctorRepository {
         PreparedStatement statement2 = null;
         int result = 0;
 
-        //Doctor dr = new Doctor();
+
         try {
             connection = DBConnectionPool.getInstance().getConnection();
             //PreparedStatement statement;

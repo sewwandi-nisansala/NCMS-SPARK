@@ -49,9 +49,8 @@ public class Doctor {
 
     /**
      * load doctor details to the database
-     * @param doctor
      */
-    public void loadData(Doctor doctor){
+    public void loadData(){
         try{
             Connection con = DBConnectionPool.getInstance().getConnection();
 

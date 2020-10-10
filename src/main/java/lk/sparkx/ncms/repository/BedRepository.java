@@ -17,15 +17,14 @@ public class BedRepository {
 
         try {
             connection = DBConnectionPool.getInstance().getConnection();
-            int result=0;
 
             statement = connection.prepareStatement("DELETE FROM hospital_bed WHERE patient_id='"+patientId+"'");
             System.out.println(statement);
-            result = statement.executeUpdate();
+            statement.executeUpdate();
 
             connection.close();
 
-        } catch (Exception exception) {
+        } catch (Exception ignored) {
 
         }
     }

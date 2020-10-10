@@ -39,11 +39,12 @@ public class Bed {
         setHospitalId(hospitalId);
         setPatientId(patientId);
         int bedId = 0;
-        Connection connection = null;
-        PreparedStatement statement = null;
+        Connection connection;
+        PreparedStatement statement;
         PreparedStatement statement2 = null;
         PreparedStatement statement3 = null;
-        int result =0;
+        int result;
+        result = 0;
         int [] bed = new int[10];
 
         try {
@@ -68,17 +69,11 @@ public class Bed {
                 System.out.println(statement2);
             }
 
-            result = statement2.executeUpdate();
-            /*if(result!=0){
-                System.out.println("success");
-            }else
-                System.out.println("Failed");
+            statement2.executeUpdate();
 
-            System.out.println(statement2);*/
             connection.close();
 
-        } catch (Exception exception) {
-
+        } catch (Exception e) {
         }
 
         return  bedId;
@@ -90,13 +85,15 @@ public class Bed {
         try {
             Connection con = DBConnectionPool.getInstance().getConnection();
 
-            PreparedStatement stmt= con.prepareStatement("DELETE FROM hospital_bed WHERE patient_id='"+patient_id+"'");
-            System.out.println(stmt);
-            int result = stmt.executeUpdate();
+            try (PreparedStatement stmt = con.prepareStatement("DELETE FROM hospital_bed WHERE patient_id='" + patient_id + "'")) {
+                System.out.println(stmt);
+                int result;
+                result = stmt.executeUpdate();
+            }
 
             con.close();
 
-        } catch (Exception exception) {
+        } catch (Exception ignored) {
 
         }
     }

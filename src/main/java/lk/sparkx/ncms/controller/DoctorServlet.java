@@ -41,8 +41,7 @@ public class DoctorServlet extends HttpServlet {
         if(doctorRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
         {
             System.out.println("Success");
-        }
-        else   //On Failure, display a meaningful message to the User.
+        } else   //On Failure, display a meaningful message to the User.
         {
             System.out.println("Failed");
         }
@@ -59,31 +58,34 @@ public class DoctorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
         Doctor doctor = new Doctor();
-        doctor.loadData(doctor);
+        doctor.loadData();
         System.out.println("successfully loaded");
 
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("id"));
+        int id;
+        id = Integer.parseInt(req.getParameter("id"));
         String name = req.getParameter("name");
         String hospitalId = req.getParameter("hospital_id");
-        Boolean isDirector = Boolean.valueOf(req.getParameter("is_director"));
+        boolean isDirector = Boolean.parseBoolean(req.getParameter("is_director"));
 
         try {
             Connection con = DBConnectionPool.getInstance().getConnection();
 
-            PreparedStatement pstmt = con.prepareStatement("UPDATE doctor SET  id=?,name=?, hospital_id=?, is_director=? WHERE id=?");
+            int result;
+            try (PreparedStatement pstmt = con.prepareStatement("UPDATE doctor SET  id=?,name=?, hospital_id=?, is_director=? WHERE id=?")) {
 
-            pstmt.setInt(1,id);
-            pstmt.setString(2,name);
-            pstmt.setString(3, hospitalId);
-            pstmt.setBoolean(4, isDirector);
+                pstmt.setInt(1, id);
+                pstmt.setString(2, name);
+                pstmt.setString(3, hospitalId);
+                pstmt.setBoolean(4, isDirector);
 
-            con.close();
+                con.close();
 
-            int result = pstmt.executeUpdate();
+                result = pstmt.executeUpdate();
+            }
             if (result != 0){
                 System.out.println("Successfully updated");
             }else{
@@ -99,11 +101,13 @@ public class DoctorServlet extends HttpServlet {
         try{
             Connection con = DBConnectionPool.getInstance().getConnection();
 
-            int doctor_id = Integer.parseInt(req.getParameter("id"));
+            int doctor_id;
+            doctor_id = Integer.parseInt(req.getParameter("id"));
 
-            PreparedStatement pstmt = con.prepareStatement("DELETE FROM doctor WHERE id=?");
-            pstmt.setInt(1, doctor_id);
-            pstmt.executeUpdate();
+            try (PreparedStatement pstmt = con.prepareStatement("DELETE FROM doctor WHERE id=?")) {
+                pstmt.setInt(1, doctor_id);
+                pstmt.executeUpdate();
+            }
         }catch(Exception e) {
             e.printStackTrace();
         }

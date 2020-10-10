@@ -1,7 +1,4 @@
 package lk.sparkx.ncms.controller;
-
-import com.google.gson.JsonObject;
-import lk.sparkx.ncms.ObjectRepo;
 import lk.sparkx.ncms.dao.Bed;
 import lk.sparkx.ncms.dao.Doctor;
 import lk.sparkx.ncms.dao.Hospital;
@@ -62,7 +59,7 @@ public class HospitalServlet extends HttpServlet {
             }
             connection.close();
 
-        } catch (Exception exception) {
+        } catch (Exception ignored) {
 
         }
 

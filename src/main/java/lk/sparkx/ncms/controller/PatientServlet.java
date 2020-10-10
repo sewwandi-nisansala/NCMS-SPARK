@@ -101,13 +101,12 @@ public class PatientServlet extends HttpServlet {
         try {
             connection = DBConnectionPool.getInstance().getConnection();
             //PreparedStatement statement;
-            ResultSet resultSet;
             ResultSet resultSet2;
 
             statement = connection.prepareStatement("SELECT * FROM patient WHERE id=?");
             statement.setString(1, id);
             System.out.println(statement);
-            resultSet = statement.executeQuery();
+            ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
                 //String id = resultSet.getString("id");
@@ -160,13 +159,11 @@ public class PatientServlet extends HttpServlet {
                     System.out.println(statement2);
                     resultSet2 = statement2.executeQuery();
                     String hosId ="";
-                    if (bedId==0) {
-                        if(resultSet2.next()) {
-                            hosId = resultSet2.getString("id");
-                            System.out.println(hosId);
-                        }
-                        bed.allocateBed(hosId, id);
+                    if(resultSet2.next()) {
+                        hosId = resultSet2.getString("id");
+                        System.out.println(hosId);
                     }
+                    bed.allocateBed(hosId, id);
 
                 }
 
@@ -174,7 +171,7 @@ public class PatientServlet extends HttpServlet {
 
             connection.close();
 
-        } catch (Exception exception) {
+        } catch (Exception ignored) {
 
         }
     }

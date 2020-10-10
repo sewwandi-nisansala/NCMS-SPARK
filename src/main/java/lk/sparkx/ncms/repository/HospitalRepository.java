@@ -14,44 +14,6 @@ public class HospitalRepository
 {
 
 
-//    public List selectHospitalsWithBeds()
-//    {
-//        try
-//        {
-//            ResultSet rs = null;
-//            Connection con = null;
-//            PreparedStatement stmt = null;
-//            try
-//            {
-//                con = DBConnectionPool.getInstance().getConnection();
-//                stmt = con.prepareStatement("SELECT * FROM hospital WHERE district = ?");
-//                stmt.setString(1, "Colombo");
-//                rs = stmt.executeQuery();
-//                while(rs.next())
-//                {
-//                    System.out.println(rs.getString("id"));
-//                    System.out.println(rs.getString("name"));
-//                }
-//            }
-//            catch(SQLException e)
-//            {
-//                e.printStackTrace();
-//            }
-//            finally
-//            {
-//                DBConnectionPool.getInstance().close(rs);
-//                DBConnectionPool.getInstance().close(stmt);
-//                DBConnectionPool.getInstance().close(con);
-//            }
-//
-//        }
-//        catch(Exception e)
-//        {
-//
-//        }
-//
-//        return null;
-//    }
 public String registerHospital(Hospital hospital) {
     String INSERT_USERS_SQL = "INSERT INTO hospital (id, name, district, location_x, location_y, build_date) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -75,14 +37,14 @@ public String registerHospital(Hospital hospital) {
         // Step 3: Execute the query or update query
         result = preparedStatement.executeUpdate();
 
-        if (result != 0)  //Just to ensure data has been inserted into the database
+        if (result != 0)
             return "SUCCESS";
 
     } catch (SQLException e) {
         // process sql exception
         printSQLException(e);
     }
-    return "Oops.. Something went wrong there..!"; // On failure, send a message from here.
+    return "Something went wrong there..!"; // On failure, send a message from here.
 }
 
     private void printSQLException(SQLException ex) {

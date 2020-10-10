@@ -18,8 +18,8 @@ public class UserServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String name = req.getParameter("name");
-        Boolean isMoh = Boolean.valueOf(req.getParameter("isMoh"));
-        Boolean isHospital = Boolean.valueOf(req.getParameter("isHospital"));
+        boolean isMoh = Boolean.parseBoolean(req.getParameter("isMoh"));
+        boolean isHospital = Boolean.parseBoolean(req.getParameter("isHospital"));
 
         User user = new User();
         user.setUserName(username);
