@@ -2,9 +2,11 @@ package lk.sparkx.ncms.controller;
 
 import com.google.gson.JsonObject;
 import lk.sparkx.ncms.ObjectRepo;
+import lk.sparkx.ncms.dao.Bed;
 import lk.sparkx.ncms.dao.Doctor;
 import lk.sparkx.ncms.dao.Hospital;
 import lk.sparkx.ncms.db.DBConnectionPool;
+import lk.sparkx.ncms.repository.DoctorRepository;
 import lk.sparkx.ncms.repository.HospitalRepository;
 
 
@@ -19,12 +21,10 @@ import java.sql.*;
 import java.util.List;
 
 @WebServlet(name = "HospitalServlet")
-public class HospitalServlet extends HttpServlet
-{
+public class HospitalServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String district = req.getParameter("district");
 
         Connection connection = null;
@@ -69,8 +69,7 @@ public class HospitalServlet extends HttpServlet
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
         String name = req.getParameter("name");
         String district = req.getParameter("district");
@@ -90,11 +89,10 @@ public class HospitalServlet extends HttpServlet
         HospitalRepository hospitalRepository = new HospitalRepository();
         String hospitalRegistered = hospitalRepository.registerHospital(hospital);
 
-        if(hospitalRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
+        if (hospitalRegistered.equals("SUCCESS"))   //On success, you can display a message to user on Home page
         {
             System.out.println("Success");
-        }
-        else   //On Failure, display a meaningful message to the User.
+        } else   //On Failure, display a meaningful message to the User.
         {
             System.out.println("Failed");
         }
@@ -108,29 +106,48 @@ public class HospitalServlet extends HttpServlet
     }
 
     @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    {
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 
-    //discharge patient by director
+
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    {
-        Connection connection = null;
-        PreparedStatement statement = null;
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //delete hospital
+        try {
+            Connection con = DBConnectionPool.getInstance().getConnection();
+            PreparedStatement pstmt = null;
 
-        String patientId = req.getParameter("id");
-        String hospitalId = req.getParameter("hospital_id");
+            String hospital_id = req.getParameter("hospitalId");
 
-//        Doctor doctor = new Doctor();
-//        doctor.dischargePatients(patientId, hospitalId);
-//
-//        Bed bed = new Bed();
-//        bed.makeAvailable(patientId);
+            pstmt = con.prepareStatement("DELETE FROM hospital WHERE id=?");
+            pstmt.setString(1, hospital_id);
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+
+        //remove patient from hospital
+        //discharge patient and make relevent bed free
+
+        try {
+            Connection con = null;
+            PreparedStatement ststmt = null;
+            String patient_id = new String(req.getParameter("patinet_id"));
+            String hospitalId = req.getParameter("hospital_id");
+
+            DoctorRepository doctorRepository = new DoctorRepository();
+            doctorRepository.dischargePatients(patient_id, hospitalId);
+
+            Bed bed = new Bed();
+            bed.removePatient(patient_id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
-
 }
+
+
+
+
