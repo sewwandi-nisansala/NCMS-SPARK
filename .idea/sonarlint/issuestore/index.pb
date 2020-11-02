@@ -11,8 +11,6 @@ f
 .src/main/java/lk/sparkx/ncms/dao/Hospital.java,3/3/33ebdf22f4310bdf9536fe2c8a6d6bb6d4d9558a
 ]
 -src/main/java/lk/sparkx/ncms/dao/Patient.java,3/f/3ff242f9d65cf4bb22092c1742c5c61b42d17f60
-\
-,src/main/java/lk/sparkx/ncms/dao/Result.java,4/d/4dd57a0f04334719bc434689e64c19242eaa3aa7
 o
 ?src/main/java/lk/sparkx/ncms/repository/HospitalRepository.java,0/f/0f4ced8dd474642eef5eba71cf7b0cdb34b41afd
 l
@@ -37,8 +35,6 @@ g
 7src/main/java/lk/sparkx/ncms/controller/Statistics.java,4/6/4633641429cb030886f5f16ee11b942608f64b6b
 k
 ;src/main/java/lk/sparkx/ncms/repository/UserRepository.java,0/e/0e0a05b76b8d40f7b7b0f27ffc5944352741e5cd
-m
-=src/main/java/lk/sparkx/ncms/service/HospitalServiceImpl.java,f/a/fafa2242480294c9d738c4ff03c5ec15c29ef449
 m
 =src/main/java/lk/sparkx/ncms/repository/DoctorRepository.java,9/6/96ab5260d5be79f5d50fe25b25408802f6ead9d3
 j

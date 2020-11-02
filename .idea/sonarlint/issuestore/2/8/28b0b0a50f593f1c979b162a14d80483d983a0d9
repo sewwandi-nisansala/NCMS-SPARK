@@ -1,11 +1,29 @@
 
+s	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ñÓÎøÿÿÿÿ8á¶ƒÛÑ.
+Z	java:S106["9Replace this use of System.out or System.err by a logger.(şÒãûÿÿÿÿ8á¶ƒÛÑ.
+F
+java:S1481„"(Remove this unused "con" local variable.(¶‹ïÒ8á¶ƒÛÑ.
+]	java:S125""<This block of commented-out lines of code should be removed.(Á×¸Éùÿÿÿÿ8á¶ƒÛÑ.
+J	java:S108>")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8á¶ƒÛÑ.
+l
+java:S2095%"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Íé¶Ù8á¶ƒÛÑ.
+l
+java:S2095x"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ºğò8á¶ƒÛÑ.
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(ÿê§¯8á¶ƒÛÑ.
+M
+java:S1481"+Remove this unused "result" local variable.(Ó°¬Ñøÿÿÿÿ8á¶ƒÛÑ.
+l	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÚå8á¶ƒÛÑ.
 
-java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈúÀ8ôÙê—Ñ.
-
-java:S1186o"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñ–§Ï8Öúê—Ñ.
-
-java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«Ë³ğ8ª´ë—Ñ.
->
-java:S1116J"Remove this empty statement.(Åñ­õşÿÿÿÿ8ôÙê—Ñ.
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆÓÑù8¤–÷—Ñ.
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğÿä—8á¶ƒÛÑ.
+I
+java:S1481…"+Remove this unused "ststmt" local variable.(õÔ³ü8á¶ƒÛÑ.
+i
+java:S2095("GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8á¶ƒÛÑ.
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(ï—Ì©ÿÿÿÿÿ8á¶ƒÛÑ.
+{
+java:S1989I"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(­¦ÕÔüÿÿÿÿ8á¶ƒÛÑ.
+Z	java:S106^"9Replace this use of System.out or System.err by a logger.(—æá‚ıÿÿÿÿ8á¶ƒÛÑ.
+{
+java:S1989J"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(” úúÿÿÿÿ8á¶ƒÛÑ.
+C
+java:S2129†" Remove this "String" constructor(»ñÓÎøÿÿÿÿ8á¶ƒÛÑ.

@@ -1,0 +1,6 @@
+
+l
+java:S2095>"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(’ğİÈ8ê¶ƒÛÑ.
+i
+java:S2095?"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8ê¶ƒÛÑ.
+E	java:S108J")Either remove or fill this block of code.(®ËúÃ8ê¶ƒÛÑ.

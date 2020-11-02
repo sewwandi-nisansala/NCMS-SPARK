@@ -1,32 +1,30 @@
 
-U	java:S106“"9Replace this use of System.out or System.err by a logger.(¹†­v8îŽë˜Ñ.
-[	java:S106¦"9Replace this use of System.out or System.err by a logger.(Ý‹È­ÿÿÿÿÿ8îŽë˜Ñ.
-i
-java:S2095n"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8îŽë˜Ñ.
-U	java:S106m"9Replace this use of System.out or System.err by a logger.(ÿê§¯8îŽë˜Ñ.
-X	java:S125J"<This block of commented-out lines of code should be removed.(ª‚ãÅ8—¯­˜Ñ.
-v
-java:S1989&"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¼µý÷8—¯­˜Ñ.
-[	java:S106—"9Replace this use of System.out or System.err by a logger.(Û³Éšúÿÿÿÿ8îŽë˜Ñ.
-]	java:S125q"<This block of commented-out lines of code should be removed.(Ò£¸™øÿÿÿÿ8îŽë˜Ñ.
-]	java:S125g"<This block of commented-out lines of code should be removed.(Á×¸Éùÿÿÿÿ8îŽë˜Ñ.
-T
-java:S2589£"7Remove this expression which always evaluates to "true"(øø¤8îŽë˜Ñ.
-e
-java:S2095¡"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ïé«Þ8îŽë˜Ñ.
-M
-java:S1481c"+Remove this unused "result" local variable.(Ó°¬Ñøÿÿÿÿ8îŽë˜Ñ.
-v
-java:S1989"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(™Œóœ8—¯­˜Ñ.
-{
-java:S1989!"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(” úúÿÿÿÿ8—¯­˜Ñ.
+V	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Ç±‘¹8îŽë˜Ñ.
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(ÿê§¯8îŽë˜Ñ.
+[	java:S106¤"9Replace this use of System.out or System.err by a logger.(Ý‹È­ÿÿÿÿÿ8îŽë˜Ñ.
 {
 java:S1989 "YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(­¦ÕÔüÿÿÿÿ8—¯­˜Ñ.
+]	java:S125g"<This block of commented-out lines of code should be removed.(Á×¸Éùÿÿÿÿ8îŽë˜Ñ.
 l
-java:S2095k"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…é¦Æ8îŽë˜Ñ.
-Z	java:S106N"9Replace this use of System.out or System.err by a logger.(—æá‚ýÿÿÿÿ8—¯­˜Ñ.
-F	java:S108±")Either remove or fill this block of code.(®ËúÃ8îŽë˜Ñ.
+java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…é¦Æ8îŽë˜Ñ.
+U	java:S106’"9Replace this use of System.out or System.err by a logger.(¹†­v8îŽë˜Ñ.
+]	java:S125p"<This block of commented-out lines of code should be removed.(Ò£¸™øÿÿÿÿ8îŽë˜Ñ.
+K	java:S108®")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8ç¶ƒÛÑ.
+v
+java:S1989&"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¼µý÷8—¯­˜Ñ.
 Z	java:S106I"9Replace this use of System.out or System.err by a logger.(þÒãûÿÿÿÿ8—¯­˜Ñ.
-[	java:S106œ"9Replace this use of System.out or System.err by a logger.(¤·ƒÁùÿÿÿÿ8îŽë˜Ñ.
-V	java:S106 "9Replace this use of System.out or System.err by a logger.(Ç±‘¹8îŽë˜Ñ.
+{
+java:S1989!"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(” úúÿÿÿÿ8—¯­˜Ñ.
+[	java:S106›"9Replace this use of System.out or System.err by a logger.(¤·ƒÁùÿÿÿÿ8îŽë˜Ñ.
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(—æá‚ýÿÿÿÿ8—¯­˜Ñ.
+X	java:S125J"<This block of commented-out lines of code should be removed.(ª‚ãÅ8—¯­˜Ñ.
 ]	java:S125O"<This block of commented-out lines of code should be removed.(áâÈùÿÿÿÿ8—¯­˜Ñ.
+v
+java:S1989"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(™Œóœ8—¯­˜Ñ.
+[	java:S106–"9Replace this use of System.out or System.err by a logger.(Û³Éšúÿÿÿÿ8îŽë˜Ñ.
+e
+java:S2095 "GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ïé«Þ8îŽë˜Ñ.
+M
+java:S1481c"+Remove this unused "result" local variable.(Ó°¬Ñøÿÿÿÿ8îŽë˜Ñ.
+d
+java:S2095m"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–8ç¶ƒÛÑ.

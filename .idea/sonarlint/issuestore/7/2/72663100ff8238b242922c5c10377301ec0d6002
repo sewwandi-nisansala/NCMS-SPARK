@@ -1,17 +1,21 @@
 
-E	java:S108P")Either remove or fill this block of code.(®ËúÃ8¸·™Ñ.
-j
-java:S2259G"HA "NullPointerException" could be thrown; "statement2" is nullable here.(±µñÒûÿÿÿÿ8¸·™Ñ.
 \
-java:S1854G":Remove this useless assignment to local variable "result".(±µñÒûÿÿÿÿ8¸·™Ñ.
-X	java:S125H"<This block of commented-out lines of code should be removed.(ùéËç8¸·™Ñ.
+java:S1854/":Remove this useless assignment to local variable "result".(üø¤ğùÿÿÿÿ8ÿ¶ƒÛÑ.
 X
-java:S11179"6Rename "id" which hides the field declared at line 10.(°æêüÿÿÿÿ8¸·™Ñ.
+java:S1117:"6Rename "id" which hides the field declared at line 10.(°æêüÿÿÿÿ8¸·™Ñ.
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(”âúóüÿÿÿÿ8ÿ¶ƒÛÑ.
+m	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ÄËÚ8ÿ¶ƒÛÑ.
+J	java:S108`")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8ÿ¶ƒÛÑ.
+M
+java:S1481Z"+Remove this unused "result" local variable.(ÑûÃÇûÿÿÿÿ8ÿ¶ƒÛÑ.
+i
+java:S20957"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8¸·™Ñ.
 Q
 java:S1481-"/Remove this unused "statement3" local variable.(¨»ÊÂúÿÿÿÿ8¸·™Ñ.
-U	java:S1065"9Replace this use of System.out or System.err by a logger.(ÿê§¯8¸·™Ñ.
-i
-java:S20956"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ê¥¶îüÿÿÿÿ8¸·™Ñ.
-U	java:S106D"9Replace this use of System.out or System.err by a logger.(Ç±‘¹8¸·™Ñ.
+j
+java:S2259H"HA "NullPointerException" could be thrown; "statement2" is nullable here.(á•˜Üûÿÿÿÿ8ÿ¶ƒÛÑ.
 M
-java:S1481."+Remove this unused "result" local variable.(Ó°¬Ñøÿÿÿÿ8¸·™Ñ.
+java:S1481."+Remove this unused "result" local variable.(ÑûÃÇûÿÿÿÿ8¸·™Ñ.
+E	java:S108L")Either remove or fill this block of code.(”ı¾8ÿ¶ƒÛÑ.
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(Ç±‘¹8¸·™Ñ.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ÿê§¯8¸·™Ñ.
