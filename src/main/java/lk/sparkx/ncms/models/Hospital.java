@@ -47,7 +47,6 @@ public class Hospital implements DatabaseModel {
      */
     public int getAvailableBedsCount() {
         try {
-          //  Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;
@@ -89,7 +88,6 @@ public class Hospital implements DatabaseModel {
     @Override
     public void loadModel() {
         try {
-          //  Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;
@@ -118,7 +116,6 @@ public class Hospital implements DatabaseModel {
     @Override
     public void loadRelationalModels() {
         try {
-        //    Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;

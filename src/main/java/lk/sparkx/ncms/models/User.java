@@ -71,7 +71,6 @@ public class User implements DatabaseModel {
     @Override
     public void loadModel() {
         try {
-          //  Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;

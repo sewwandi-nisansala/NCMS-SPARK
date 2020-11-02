@@ -44,7 +44,6 @@ public class Doctor extends User implements DatabaseModel {
     @Override
     public void loadModel() {
         try {
-           // Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;
@@ -70,7 +69,6 @@ public class Doctor extends User implements DatabaseModel {
      */
     public void loadModel(int userId) {
         try {
-          //  Connection connection = Database.open();
             Connection connection = DBConnectionPool.getInstance().getConnection();
 
             PreparedStatement statement;
